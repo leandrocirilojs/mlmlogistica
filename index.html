@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora MRL Logística</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Transportadora MRL Logística</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cotacao">Cotação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Eficiência e pontualidade no transporte de cargas</h2>
+        <p>Transporte rodoviário de cargas com segurança e tecnologia.</p>
+        <a href="#cotacao" class="btn">Solicitar Cotação</a>
+        <a href="#contato" class="btn">Entre em contato</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Transportadora MRL Logística oferece transporte de cargas secas e refrigeradas com monitoramento em tempo real.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Transporte Rodoviário de Cargas</li>
+            <li>Entrega "Door to Door"</li>
+            <li>Monitoramento em Tempo Real</li>
+            <li>Frota Especializada</li>
+        </ul>
+    </section>
+
+    <section id="cotacao">
+        <!-- Conteúdo da cotação será inserido aqui -->
+
+      <section id="cotacao">
+    <div class="cotacao-container">
+        <h2>Cotação de Frete</h2>
+        <p>Preencha os dados para calcular o valor aproximado</p>
+        
+        <div class="form-group">
+            <label for="partida">Endereço de Partida:</label>
+            <input type="text" id="partida" placeholder="Digite o endereço de coleta">
+        </div>
+        
+        <div class="form-group">
+            <label for="destino">Endereço de Destino:</label>
+            <input type="text" id="destino" placeholder="Digite o endereço de entrega">
+        </div>
+        
+        <div class="slider-container">
+    <label for="distancia">Distância (km): <span id="distancia-value">100</span></label>
+    <input type="range" min="50" max="1000" value="100" class="slider" id="distancia">
+    <div class="km-info">
+        <span>50 km</span>
+        <span>1000 km</span>
+    </div>
+</div>
+
+      
+        
+        <div class="resultado-cotacao">
+            <p>Valor estimado: <span id="valor-frete">R$ 500,00</span></p>
+            <p>(Cálculo: R$ 5,00 por km)</p>
+        </div>
+        
+        <button class="btn">Solicitar Cotação Completa</button>
+    </div>
+      </section>
+
+      
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@mrltransportes.com</p>
+        <p>Telefone: (11) 98765-4321</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Transportadora MRL Logística</p>
+    </footer>
+
+    <div id="whatsapp-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    </div>
+
+    <div id="whatsapp-form">
+        <!-- Formulário do WhatsApp será inserido aqui -->
+
+      <div id="whatsapp-form">
+    <h3>Entre em contato</h3>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="tel" id="telefone" placeholder="Seu telefone">
+    <input type="email" id="email" placeholder="Seu e-mail">
+    <button onclick="enviarWhatsApp()">Enviar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
