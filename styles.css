@@ -1,0 +1,397 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção Hero */
+#hero {
+    background: #00509e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn {
+    background: white;
+    color: #00509e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* Seções de conteúdo */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Botão do WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Formulário de cotação */
+#cotacao {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.slider-container {
+    margin: 30px 0;
+}
+
+.slider {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    margin: 20px 0;
+}
+
+.resultado-cotacao {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Formulário WhatsApp */
+#whatsapp-form {
+    position: fixed;
+    bottom: 90px;
+    right: -300px;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+}
+
+#whatsapp-form.open {
+    right: 20px;
+}
+
+#whatsapp-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#whatsapp-form button {
+    width: 100%;
+    padding: 8px;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+/* Estilo personalizado para o slider - Pista com carro */
+.slider-container {
+    position: relative;
+    margin: 40px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 30px; /* Altura maior para a "pista" */
+    background: #555; /* Cor da pista */
+    border-radius: 15px;
+    outline: none;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Pista decorada */
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        transparent 5%, 
+        #fff 5%, 
+        #fff 10%, 
+        transparent 10%, 
+        transparent 15%, 
+        #fff 15%, 
+        #fff 20%, 
+        transparent 20%, 
+        transparent 25%, 
+        #fff 25%, 
+        #fff 30%, 
+        transparent 30%, 
+        transparent 35%, 
+        #fff 35%, 
+        #fff 40%, 
+        transparent 40%, 
+        transparent 45%, 
+        #fff 45%, 
+        #fff 50%, 
+        transparent 50%, 
+        transparent 55%, 
+        #fff 55%, 
+        #fff 60%, 
+        transparent 60%, 
+        transparent 65%, 
+        #fff 65%, 
+        #fff 70%, 
+        transparent 70%, 
+        transparent 75%, 
+        #fff 75%, 
+        #fff 80%, 
+        transparent 80%, 
+        transparent 85%, 
+        #fff 85%, 
+        #fff 90%, 
+        transparent 90%, 
+        transparent 95%, 
+        #fff 95%, 
+        #fff 100%);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* Estilo do "carro" (thumb) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 30px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30"><rect x="5" y="10" width="40" height="15" rx="2" fill="%2300509e"/><rect x="10" y="5" width="30" height="5" fill="%2300509e"/><circle cx="15" cy="25" r="5" fill="%23333"/><circle cx="35" cy="25" r="5" fill="%23333"/></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: none;
+}
+
+.slider::-moz-range-thumb {
+    width: 50px;
+    height: 30px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30"><rect x="5" y="10" width="40" height="15" rx="2" fill="%2300509e"/><rect x="10" y="5" width="30" height="5" fill="%2300509e"/><circle cx="15" cy="25" r="5" fill="%23333"/><circle cx="35" cy="25" r="5" fill="%23333"/></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+/* Efeito hover no carro */
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+/* Placa de km */
+.km-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    position: relative;
+}
+
+.km-info::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ddd;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+/* Container principal */
+.endereco-maps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilo para cada campo */
+.campo-endereco {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    border: 1px solid #dfe1e5;
+    background: white;
+}
+
+.campo-endereco:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Input principal */
+.campo-endereco input {
+    width: 100%;
+    padding: 18px 16px 8px 46px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: transparent;
+    color: #202124;
+}
+
+/* Label flutuante */
+.campo-endereco label {
+    position: absolute;
+    top: 18px;
+    left: 46px;
+    color: #5f6368;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* Efeito quando o input está em foco ou com valor */
+.campo-endereco input:focus + label,
+.campo-endereco input:not(:placeholder-shown) + label {
+    top: 6px;
+    left: 46px;
+    font-size: 11px;
+    color: #1a73e8;
+}
+
+/* Ícones estilo Google Maps */
+.campo-endereco::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+/* Ícone de partida (pin azul) */
+.campo-endereco.partida::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231a73e8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>');
+}
+
+/* Ícone de destino (pin vermelho) */
+.campo-endereco.destino::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ea4335"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>');
+}
+
+/* Efeito de foco no campo */
+.campo-endereco:focus-within {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Placeholder transparente */
+.campo-endereco input::placeholder {
+    color: transparent;
+}
+
+/* Versão responsiva */
+@media (max-width: 600px) {
+    .campo-endereco input {
+        padding: 16px 12px 6px 40px;
+        font-size: 14px;
+    }
+    
+    .campo-endereco label {
+        left: 40px;
+        font-size: 13px;
+    }
+    
+    .campo-endereco::before {
+        left: 12px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .campo-endereco input:focus + label,
+    .campo-endereco input:not(:placeholder-shown) + label {
+        left: 40px;
+        font-size: 10px;
+    }
+}
+
